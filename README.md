@@ -3,7 +3,7 @@
 
 利用ckip，加上自訂詞彙，處理標籤完的網路文章及留言，為了放入機器學習模型做事前準備
 
-1. 自行下載ckip的斷詞模組\n
+1. 自行下載ckip的斷詞模組（詳見ckip_test.py的註解）
 2. stopwords & customized 可以自行增加
 3. 將label好的資料放在labeled_data資料夾中
 4. 執行ckip_test.py程式
