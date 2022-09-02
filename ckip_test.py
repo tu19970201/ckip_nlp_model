@@ -77,11 +77,11 @@ if __name__ == "__main__":
         
         # 去掉stopwords
         outstr = []
-        for sentence in ws_results :
+        for index, sentence in enumerate(ws_results) :
+            outstr.append([])
             for word in sentence:
-                if word in stopwords :
-                    sentence.remove(word)
-            outstr.append(sentence)
+                if word not in stopwords :
+                    outstr[index].append(word)
     
         # 將label與斷詞結果結合
         label : list = pt_data[0].values.tolist()
