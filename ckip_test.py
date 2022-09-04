@@ -73,7 +73,8 @@ if __name__ == "__main__":
     
         #斷詞
         ws = WS("./data") 
-        ws_results = ws(text,recommend_dictionary=dictionary)
+        # ws_results = ws(text,recommend_dictionary=dictionary)
+        ws_results = ws(text,coerce_dictionary=dictionary)
         
         # 去掉stopwords
         outstr = []
@@ -89,7 +90,7 @@ if __name__ == "__main__":
         results = results[results['outstr'].map(lambda d: len(d)) > 0]
     
         # 存入csv
-        results.to_csv(f'ws_data/{file_name[:10]}_ws.csv', header = False, index = False)
+        results.to_csv(f'ws_data/{file_name[:10]}_ws.csv', index = False)
         
         file_num += 1
         print('=' * 30)
