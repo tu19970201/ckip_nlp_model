@@ -8,3 +8,5 @@
 3. 將label好的資料放在labeled_data資料夾中
 4. 執行ckip_test.py程式
 5. 完成斷詞的檔案會存在ws_data
+
+也可以直接使用model.ipyb，斷詞後直接進入XGBoost模型的簡單測試
