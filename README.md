@@ -1,4 +1,4 @@
-# ckip_test
+# ckip_nlp_model
 參考：https://github.com/ckiplab/ckiptagger
 
 利用ckip，加上自訂詞彙，處理標籤完的網路文章及留言，為了放入機器學習模型做事前準備
